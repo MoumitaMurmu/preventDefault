@@ -8,14 +8,16 @@
 <body>
     <h1>Event Object</h1>
     <h2>e.preventDefault() method</h2>
-    <a href="https://www.w3schools.com/" id="anchor">W3Schools</a>
+    <a href="https://www.w3schools.com/" id="anchor" onclick="handleClick(event)">W3Schools</a>
     <script>
 
-let link = document.getElementById('anchor');
-link.addEventListener('click', function(e){
+// let link = document.getElementById('anchor');
+// link.addEventListener('click', function(e){
+//     e.preventDefault();
+// })
+function handleClick(e){
     e.preventDefault();
-})
-
+}
 </script>
 
 
